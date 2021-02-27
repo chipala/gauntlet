@@ -1,5 +1,8 @@
+#!/usr/bin/env python3
+
 import Character as m_character
 import Capacity as m_capacity
+import Board as m_board
 
 if __name__ == "__main__":    
     print("!! Gauntlet !!")
@@ -26,3 +29,9 @@ if __name__ == "__main__":
     for character in l:
         print(f"{character}")
         character.listCapacity()
+
+    board = m_board.Board(5, 5)
+    board.addElement()
+    board.addElement(4, 1, z)
+    board.addElement(2, 3, e)
+    board.draw()
